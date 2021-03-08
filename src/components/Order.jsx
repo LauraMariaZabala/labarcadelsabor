@@ -5,11 +5,10 @@ import OrderItem from './OrderItem';
 function Order(props) {
     const {cartItems, handleAdd, handleSubstract} = props;
 
-    const deliveryCost = 3000;
+
     const subTotal = cartItems.reduce((a, c) => a + c.price * c.qty * 1000, 0);
     const subTotalCostFormatted = (new Intl.NumberFormat("es-CO", {style: "currency", currency: "COP", maximumFractionDigits: 2})).format(subTotal)
-    const deliveryCostFormatted = (new Intl.NumberFormat("es-CO", {style: "currency", currency: "COP", maximumFractionDigits: 2})).format(deliveryCost)
-    const totalCostFormatted = (new Intl.NumberFormat("es-CO", {style: "currency", currency: "COP", maximumFractionDigits: 2})).format(subTotal + deliveryCost)
+    const totalCostFormatted = (new Intl.NumberFormat("es-CO", {style: "currency", currency: "COP", maximumFractionDigits: 2})).format(subTotal)
 
     const getEmoji = (category) => {
         switch(category) {
@@ -29,13 +28,13 @@ function Order(props) {
         let str ='';
         cartItems.forEach(item => {
             if (item.qty !== 0)
-                { let subst= `* ${item.name}: ${item.qty} precio: $${item.qty * item.price * 1000}, \r\n`;
+                { let subst= `*Hola, mi pedido es ${item.name}: ${item.qty} precio: $${item.qty * item.price * 1000}, \r\n`;
                     str+=subst;}
         })
 
         str = `${str} TOTAL: ${totalCostFormatted}`;
 
-        return `http://wa.me/573243013120?text=${window.encodeURIComponent(str)}`;
+        return `http://wa.me/573232198360?text=${window.encodeURIComponent(str)}`;
     }
     return(
         <div className="Order">
@@ -68,10 +67,6 @@ function Order(props) {
                             <div className="order-cost order-subtotal">
                                 <span>Subtotal:</span>
                                 <span>{subTotalCostFormatted}</span>
-                            </div>
-                            <div className="order-cost order-delivery">
-                                <span>Domicilio:</span>
-                                <span>{deliveryCostFormatted}</span>
                             </div>
                             <div className="order-cost order-total">
                                 <span>Total:</span>

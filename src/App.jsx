@@ -8,7 +8,7 @@ import data from './data/data';
 import './styles/App.css';
 import burguerImg from './assets/burguer.png';
 import salvajadaImg from './assets/salvajada.jpg';
-import dogImg from './assets/Dog1.jpg';
+import dogImg from './assets/dog.jpeg';
 
 
 

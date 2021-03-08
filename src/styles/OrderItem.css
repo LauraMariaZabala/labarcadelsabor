@@ -1,5 +1,5 @@
 .order-item {
-    background-color: rgb(41, 41, 41);
+    background-color: #bd2929b9;
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
@@ -19,18 +19,18 @@
 }
 
 .order-item-title {
-    color: red;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
 }
 
 .order-item-price {
-    color: red;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
 }
 
 .order-item-quantity {
     display: flex;
-    color: red;
+    color: rgb(10, 10, 10);
     margin: 8px 0;
     justify-content: space-between;
     align-items: center;
