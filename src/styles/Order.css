@@ -1,5 +1,27 @@
+.Order{
+    min-width: 100%;
+    padding: 16px;
+}
+.OrderButtonContainer {
+    list-style: none;
+}
+.btn-send{
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    background-color: #080808;;
+    width:auto;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 16px;
+    padding: 8px 16px;
+}
+/* ---------- */
 .card-container{
-    background-color: #eb6a0b;
+    background-color: #61606096;
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
@@ -18,7 +40,7 @@
 }
 
 .card-title{
-    color: #080808;
+    color: #080808;;
     font-size: 1.2rem;
 }
 .card-text{
@@ -56,7 +78,29 @@
     justify-self: flex-end;
     border-radius: 30px;
     padding: 8px;
+}
+
+.whatsappContainer {
     text-decoration: none;
-  
-    
+}
+
+.whatsappContainer:visited {
+    color: white;
+}
+
+.order-cost-container {
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-cost {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.order-total {
+    font-size: 1.4rem;
 }

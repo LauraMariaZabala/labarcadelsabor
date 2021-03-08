@@ -1,0 +1,34 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+#app {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-products {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  gap: 16px;
+}
+
+.category-picture {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.img-dog {
+  width: 60%;
+}

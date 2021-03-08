@@ -1,62 +1,54 @@
-.card-container{
-    background-color: #eb6a0b;
+.order-item {
+    background-color: rgb(41, 41, 41);
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
 }
 
-.card-body{
+.order-item-body {
     display: flex;
     flex-direction: column;
     padding: 16px;
 }
 
-.title-container {
+.order-item-title-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 8px;
 }
 
-.card-title{
-    color: #080808;
+.order-item-title {
+    color: red;
     font-size: 1.2rem;
 }
-.card-text{
-    color: white;
+
+.order-item-price {
+    color: red;
     font-size: 1rem;
 }
-.card-price{
-    color: #080808;;
-    font-size: 1.2rem;
-}
-.card-quantity{
+
+.order-item-quantity {
     display: flex;
-    color: #080808;;
+    color: red;
     margin: 8px 0;
     justify-content: space-between;
     align-items: center;
 }
 
-.card-quantity-controls {
+.order-item-controls {
     display: flex;
     gap: 8px;
     justify-content: center;
     align-items: center;
 }
 
-.btn-quantity {
+.order-item-btn {
     width: 30px;
     height: 30px; 
-    border-radius: 15px;
-    border-color: inherit;
-    border-style: none;
 }
 
-.btn-add{
+.order-item-total {
     justify-self: flex-end;
-    border-radius: 30px;
-    padding: 8px;
-    text-decoration: none;
-  
-    
+    font-size: 1.3rem;
 }
