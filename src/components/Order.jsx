@@ -34,7 +34,7 @@ function Order(props) {
 
         str = `${str} TOTAL: ${totalCostFormatted}`;
 
-        return `http://wa.me/573243013120?text=${window.encodeURIComponent(str)}`;
+        return `http://wa.me/573042118499?text=${window.encodeURIComponent(str)}`;
     }
     return(
         <div className="Order">
