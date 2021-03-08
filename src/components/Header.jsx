@@ -3,13 +3,11 @@ import '../styles/Header.css' ;
 
 const Header = () =>(
 
-    <div className="container">
-     <h1 className="title">Bienvenido a</h1>
-      <img src="assets/logo.png"  className="img" alt=""/>
-
-    <form action="inicio.html">
-        <button class="btn">Ingresar</button>
-    </form>
-    </div>
+    
+        <div className="logo1">
+            <img src="./../assets/logo.png" alt=""/>
+        </div>
+        
+    
 );
 export default Header;
